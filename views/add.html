@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+ <title>{% block title %}Add Page -{{title}}</title>
+<title></title>
+<form action='/add' method='post'>
+  <h1>Add a Page</h1>
+  <div class="form-group">
+    <label for="pagetitle">Page Title</label>
+    <input name="pagetitle" class="form-control" placeholder="Page Title">
+  </div>
+  <div class="form-group2">
+    <label for="pagecontent">Page Content</label>
+    <input name="pagecontent" class="form-control" id="pagecontent" >
+  </div>
+    
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+{% endblock %}
